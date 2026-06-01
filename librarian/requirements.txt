@@ -1,0 +1,11 @@
+# librarian dependency compatibility locks (security-tools venv)
+#
+# librarian pulls transformers via `sentence-transformers>=3.0` (pyproject.toml).
+# transformers 5.9.0 requires tokenizers>=0.22.0,<=0.23.0, but PyPI has no
+# tokenizers 0.23.0 final release: the line jumps 0.22.2 -> 0.23.1. A
+# huggingface_hub upgrade pulls tokenizers 0.23.1, which then breaks
+# `import transformers` with a version-requirement ImportError.
+#
+# Pin tokenizers to the highest build that satisfies transformers' cap.
+# Apply with: pip install -r librarian/requirements.txt
+tokenizers==0.22.2
