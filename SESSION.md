@@ -204,7 +204,7 @@ book corpus needed.
 1. Optional: live re-verify of Librarian edge extraction on a real book.
 2. Optional: end-to-end live test of the full `/warrant <direction>` skill
    against a real codebase with a built Librarian index.
-3. Optional: push to GitHub remote (`https://github.com/Nicholas-Kloster/warrant`)
+3. Optional: push to GitHub remote (`https://github.com/sshpie/warrant`)
    so Artifact C is publicly visible.
 
 ## Notes
@@ -213,7 +213,7 @@ book corpus needed.
   (full book text is copyrighted).
 - The Tier-1 *check compiler* is deliberately out of scope — its own future
   sub-project; `checkability_tier` is populated but not compiled.
-- `~/warrant` has a GitHub remote: `https://github.com/Nicholas-Kloster/warrant`
+- `~/warrant` has a GitHub remote: `https://github.com/sshpie/warrant`
 - To use the skill: build a Librarian index, copy `.warrant/config.example.json`
   to `.warrant/config.json` in your project, fill in `index_path` and
   `base_repo`, then invoke `/warrant <direction>` in Claude Code.
